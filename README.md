@@ -3,7 +3,7 @@
 Gitmoji is a ZSH plugin that generates random Github emojis.
 
 # Quick Start
-To use it, clone this repository under your custom plugins
+To use it, clone this repository under your custom plugins.
 
 ```console
 cd  $ZSH/custom/plugins
@@ -18,7 +18,7 @@ plugins=(... gitmoji)
 
 # Usage
 
-You can use it to generate a random GitHub emoji or add a random Github emoji in front of a message 
+This tool enables you to generate a random GitHub emoji or effortlessly add a random GitHub emoji at the beginning of your message.
 
 ```console
 $ gitmoji
@@ -28,5 +28,10 @@ $ gitmoji Hi
 $ gitmoji "This is a long message"
 :black_cat: This is a long message
 ```
-You also create a git commit with a 
+Additionally, it provides the convenience of creating a git commit with a random GitHub emoji using the `gcamj` alias.
 
+```console
+$ gcamj "Initial commit"
+[main 6e2ad9c] :notes: Initial
+ 1 file changed, 32 insertions(+)
+```
