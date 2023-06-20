@@ -46,11 +46,17 @@ generate_gh_emojis() {
   fi
 }
 
+get_random_number() {
+  local MAX=$1
+  local SEED=$(date +%s)
+  RANDOM=$(($SEED * $SEED))
+  local RANDOM_NUMBER=$((RANDOM % MAX + 1))
+  echo "$RANDOM_NUMBER"
+}
 
 get_random_emoji() {
  TOTAL=$(wc -l $RAW_FILE_NAME | grep -Eo "[0-9]+")
-
- RAND_LINE=$(jot -r 1 0 $TOTAL)
+ RAND_LINE=$(get_random_number $TOTAL)
 
  let INDX=0
  while read EMOJI; 
@@ -63,7 +69,6 @@ get_random_emoji() {
  done < $RAW_FILE_NAME;
 }
 
-
 gitmoji() {
   generate_gh_emojis
 
@@ -71,8 +76,6 @@ gitmoji() {
   MSG=$1
   echo $EMOJI $MSG
 }
-
-
 
 gcamj() {
   GITMOJI=$(gitmoji $1)
