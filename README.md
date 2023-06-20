@@ -2,6 +2,19 @@
 
 Gitmoji is a ZSH plugin that generates random Github emojis.
 
+# Dependencies
+
+Make sure these dependencies are installed and accessible in your shell environment to use the plugin successfully.
+
+1. curl 
+2. grep 
+3. date 
+4. rm 
+5. cat 
+6. cut 
+7. wc 
+8. git
+
 # Quick Start
 To use it, clone this repository under your custom plugins.
 
