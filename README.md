@@ -6,8 +6,8 @@ Gitmoji is a ZSH plugin that generates random Github emojis.
 To use it, clone this repository under your custom plugins.
 
 ```console
-cd  $ZSH/custom/plugins
-git clone https://github.com/resultanyildizi/gitmoji 
+$ cd  $ZSH/custom/plugins
+$ git clone https://github.com/resultanyildizi/gitmoji 
 ```
 
 Then, add gitmoji to the plugins array in your zshrc file:
